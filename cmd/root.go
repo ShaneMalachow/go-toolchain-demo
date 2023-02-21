@@ -34,8 +34,8 @@ to quickly create a Cobra application.`,
 			fmt.Println("Could not convert argument into integer.")
 			os.Exit(1)
 		}
-		
-		if isPerfect(i){
+
+		if isPerfect(i) {
 			fmt.Printf("%d is a perfect number.\n", i)
 		} else {
 			fmt.Printf("%d is not a perfect number.\n", i)
@@ -45,7 +45,8 @@ to quickly create a Cobra application.`,
 
 func isPerfect(i int) bool {
 	sum := 0
-	for x := 1; x < i/2+1; x++ {
+	// for x := 1; x < i/2+1; x++ {
+	for x := 1; x < i; x++ {
 		if i%x == 0 {
 			sum += x
 		}
