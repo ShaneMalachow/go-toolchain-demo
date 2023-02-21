@@ -45,8 +45,8 @@ to quickly create a Cobra application.`,
 
 func isPerfect(i int) bool {
 	sum := 0
-	// for x := 1; x < i/2+1; x++ {
-	for x := 1; x < i; x++ {
+	for x := 1; x < i/2+1; x++ {
+	// for x := 1; x < i; x++ {
 		if i%x == 0 {
 			sum += x
 		}
